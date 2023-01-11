@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">make appointment</h1>
+ 
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <p class="message">Message</p>
+    
+       <span>your name :</span>
+       <input type="text" name="name" placeholder="enter your name" class="box" required>
+       <span>your email :</span>
+       <input type="email" name="email" placeholder="enter your email" class="box" required>
+       <span>your number :</span>
+       <input type="number" name="number" placeholder="enter your number" class="box" required>
+       <span>appointment date :</span>
+       <input type="datetime-local" name="date" class="box" required>
+       <input type="submit" value="make appointment" name="submit" class="link-btn">
+    </form>  
+ 
+ </section>
+ 
+ <!-- contact section ends -->
+
+ 
+
+
+
+ 
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <p>+234-7064693930</p>
+          <p>+234-9136472523</p>
+       </div>
+       
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Ogun State Nigeria</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>07:00am to 10:00pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>lextech@gmail.com</p>
+          
+       </div>
+ 
+    </div>
+ 
+    <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>LexTech</span>  </div>
+ 
+ </section>
+ 
+ <!-- footer section ends -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
